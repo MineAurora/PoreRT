@@ -22,11 +22,12 @@ jobs:
         java-version: 1.8
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    - name: Build with Gradle
+    - name: git1
       run: git config --global user.email "MA@email.com"
+    - name: git2
       run: git config --global user.name "MA"
+    - name: Build with Gradle
       run: ./gradlew build
-      
     - name: Upload Artifact
       uses: actions/upload-artifact@v2
       with:
